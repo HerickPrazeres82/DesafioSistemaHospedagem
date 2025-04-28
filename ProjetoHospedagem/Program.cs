@@ -5,16 +5,16 @@ Console.OutputEncoding = Encoding.UTF8;
 
 List<Pessoa> hospedes = new List<Pessoa>();
 
-Pessoa herick = new Pessoa()
+Pessoa pedro = new Pessoa()
 {
-    Nome = "Herick",
-    Sobrenome = "Prazeres"
+    Nome = "Pedro",
+    Sobrenome = "Silva"
 };
 
-Pessoa talita = new Pessoa()
+Pessoa loislene = new Pessoa()
 {
-    Nome = "Talita",
-    Sobrenome = "de Melo Rodrigues"
+    Nome = "Loislene",
+    Sobrenome = "Santos"
 };
 
 Pessoa janja = new Pessoa()
@@ -23,13 +23,13 @@ Pessoa janja = new Pessoa()
     Sobrenome = "Silva"
 };
 
-hospedes.Add(herick);
-hospedes.Add(talita);
+hospedes.Add(pedro);
+hospedes.Add(loislene);
 //hospedes.Add(janja);
 
 Suite suite = new Suite("Premium", 2, 60M);
 
-Reserva reserva = new Reserva(diasReservados: 15);
+Reserva reserva = new(diasReservados: 15);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospede(hospedes);
 
